@@ -15,7 +15,7 @@ This model is then compared to an Azure AutoML run.
 ## Summary
 **In 1-2 sentences, explain the problem statement: e.g "This dataset contains data about... we seek to predict..."**
 
-This dataset file name "bankmarketing_train.csv"  bank's campaigns . The marketing campaigns were based on phone calls to convince potenitial clients to subscribe to bank's .Potential solution was to predict if a prospect can become a custome.
+This dataset file name "bankmarketing_train.csv"  bank's campaigns . The marketing campaigns were based on phone calls to convince potenitial clients to subscribe to bank's product. Potential solution was to predict if a prospect can become a custome.
 
 **In 1-2 sentences, explain the solution: e.g. "The best performing model was a ..."**
 
