@@ -92,8 +92,9 @@ DETAILS:      Imbalanced data can lead to a falsely perceived positive effect of
 # I ran out of time prior to printing AutoML output , saving the automl model and deleteing the cluster (last 3 cell of my juypter notebook).
 
 # Images
+## Compute Instance Running
 ![Compute Instance Running](https://user-images.githubusercontent.com/32674614/153981412-4ad70cd7-490e-46bc-a78d-efff9e06cb2f.png)
-
+## Compute Cluster
 ![Compute Cluster](https://user-images.githubusercontent.com/32674614/153981544-8d93f9a5-a3a0-4ae3-bc3d-de8418907ed4.png)
 
 ![Experiment](https://user-images.githubusercontent.com/32674614/153981589-301b812e-276d-47bb-9b67-6be02b1317d7.png)
