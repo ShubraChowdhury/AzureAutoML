@@ -72,7 +72,7 @@ The cross validation checks overfitting and for computational reasons pre-define
 **Compare the two models and their performance. What are the differences in accuracy? In architecture? If there was a difference, why do you think there was one?**
 With AutoML the accuracy of best model MaxAbsScaler LightGBM was 91.44% accuracy and accuracy of HyperDrive model was inconclusive as my model errored out multiple times 
 
-The architecture of both pipelines are different, however it follows the same process of  Load the data, instanciate the infrastructure to compute, set the parameters and call the compute method. Using AutoML allows many possibilities to increase the search for a better algorithm or a hyperparameter combination.
+The architecture of both pipelines are different, however it follows the same process of  Load the data, instanciate the infrastructure to compute, set the parameters and call the compute method. AutoML allows an increased search for a better algorithm or a hyperparameter combination.
 
 
 ## Future work
