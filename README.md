@@ -68,10 +68,30 @@ The cross validation checks overfitting and for computational reasons pre-define
 
 ## Pipeline comparison
 **Compare the two models and their performance. What are the differences in accuracy? In architecture? If there was a difference, why do you think there was one?**
+With AutoML the accuracy of best model MaxAbsScaler LightGBM was 91.44% accuracy and accuracy of HyperDrive model was inconclusive as my model errored out multiple times 
+
+The architecture of both pipelines are different, however it follows the same process of  Load the data, instanciate the infrastructure to compute, set the parameters and call the compute method. Using AutoML allows many possibilities to increase the search for a better algorithm or a hyperparameter combination.
+
 
 ## Future work
 **What are some areas of improvement for future experiments? Why might these improvements help the model?**
+AutoML generated the following alert:
+TYPE:         Class balancing detection
+STATUS:       ALERTED
+DESCRIPTION:  To decrease model bias, please cancel the current run and fix balancing problem.
+              Learn more about imbalanced data: https://aka.ms/AutomatedMLImbalancedData
+DETAILS:      Imbalanced data can lead to a falsely perceived positive effect of a model's accuracy because the input data has bias towards one class.
+
+- In order to get over the above mentioned alert multiple other techniques may be used such as resampling training data, Adaptive Synthetic,Synthetic Minority Over-sampling Technique etc.
+
 
 ## Proof of cluster clean up
 **If you did not delete your compute cluster in the code, please complete this section. Otherwise, delete this section.**
 **Image of cluster marked for deletion**
+
+# I ran out of time prior to printing AutoML output , saving the automl model and deleteing the cluster (last 3 cell of my juypter notebook).
+
+# Error Images
+![image](https://user-images.githubusercontent.com/32674614/153981412-4ad70cd7-490e-46bc-a78d-efff9e06cb2f.png)
+
+
