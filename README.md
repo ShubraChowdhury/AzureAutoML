@@ -77,12 +77,12 @@ The architecture of both pipelines are different, however it follows the same pr
 
 ## Future work
 **What are some areas of improvement for future experiments? Why might these improvements help the model?**
-AutoML generated the following alert:
-TYPE:         Class balancing detection
-STATUS:       ALERTED
-DESCRIPTION:  To decrease model bias, please cancel the current run and fix balancing problem.
+#### AutoML generated the following alert:
+#### TYPE:         Class balancing detection
+#### STATUS:       ALERTED
+#### DESCRIPTION:  To decrease model bias, please cancel the current run and fix balancing problem.
               Learn more about imbalanced data: https://aka.ms/AutomatedMLImbalancedData
-DETAILS:      Imbalanced data can lead to a falsely perceived positive effect of a model's accuracy because the input data has bias towards one class.
+#### DETAILS:      Imbalanced data can lead to a falsely perceived positive effect of a model's accuracy because the input data has bias towards one class.
 
 - In order to get over the above mentioned alert multiple other techniques may be used such as resampling training data, Adaptive Synthetic,Synthetic Minority Over-sampling Technique etc.
 
