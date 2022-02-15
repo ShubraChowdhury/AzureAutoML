@@ -17,7 +17,9 @@ This model is then compared to an Azure AutoML run.
 This dataset file name "bankmarketing_train.csv"  bank's campaigns . The marketing campaigns were based on phone calls to convince potenitial clients to subscribe to bank's .Potential solution was to predict if a prospect can become a custome.
 
 The best performing model found using AutoML was a MaxAbsScaler LightGBM   with 91.44% accuracy, 
-My program ##Failed to perform solution using hyperdrive (See the Jupyter NoteBook udacity-project.ipynb)
+My program 
+
+**##Failed** to perform solution using hyperdrive (See the Jupyter NoteBook udacity-project.ipynb)
 
 **In 1-2 sentences, explain the solution: e.g. "The best performing model was a ..."**
 
