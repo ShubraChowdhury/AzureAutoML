@@ -66,6 +66,10 @@ Following configuration was used for AutoMl
 
 The cross validation checks overfitting and for computational reasons pre-defined timeout was set to 15 Minutes (minimum allowed time is .25 hour and i used that) which limits number of Models that could be built.Model has Accuracy as primary metric.
 
+### Following are AutoML Models and Accuracy.
+![image](https://user-images.githubusercontent.com/32674614/154345574-eeabe14d-e656-4f0a-96dc-c6067d6b995a.png)
+
+
 
 ## Pipeline comparison
 **Compare the two models and their performance. What are the differences in accuracy? In architecture? If there was a difference, why do you think there was one?**
