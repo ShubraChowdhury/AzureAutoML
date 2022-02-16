@@ -90,6 +90,14 @@ The architecture of both pipelines are different, however it follows the same pr
 **If you did not delete your compute cluster in the code, please complete this section. Otherwise, delete this section.**
 **Image of cluster marked for deletion**
 
+- Deleting Cluster
+
+![Deleting Cluster](https://user-images.githubusercontent.com/32674614/154344616-15012ea4-291e-4f02-9b2f-fca427ee6aee.png)
+
+- Deleting Compute Instance
+
+![image](https://user-images.githubusercontent.com/32674614/154344691-f6102a95-bbae-413d-8717-d5919639745a.png)
+
 
 
 # References:
