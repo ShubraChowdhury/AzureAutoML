@@ -73,10 +73,10 @@ For example, consider a Bandit policy applied at interval 10. Assume that the be
 
 Following configuration was used for AutoMl 
  AutoMLConfig(experiment_timeout_minutes=16, task='classification', primary_metric='accuracy',training_data=TRAIN_DATASET,label_column_name='y', n_cross_validations=4, ebable_early_stopping=True,enable_onnx_compatible_models=True)
-- AutoMLConfig
+#### AutoMLConfig reference:
 [AutoMLConfig](https://docs.microsoft.com/en-us/python/api/azureml-train-automl-client/azureml.train.automl.automlconfig.automlconfig?view=azure-ml-py)
 The cross validation checks overfitting and for computational reasons pre-defined timeout was set to 15 Minutes (minimum allowed time is .25 hour so i used 15 minutes) which limits number of Models that could be built.Model has Accuracy as primary metric.
-
+'''
 automl_config = AutoMLConfig(
     experiment_timeout_minutes=15,
     task='classification',
@@ -87,7 +87,7 @@ automl_config = AutoMLConfig(
     ebable_early_stopping=True,
     enable_onnx_compatible_models=True
     )
-    
+ '''   
 - n_cross_validations : Is a required value.   How many cross validations to perform when user validation data is not specified. Specify validation_data to provide validation data, otherwise set n_cross_validations or validation_size to extract validation data out of the specified training data. 
 - experiment_timeout_minutes : Is the time beyond which the experiment will stop 
 - task : The type of task to run. Values can be 'classification', 'regression', or 'forecasting' depending on the type of automated ML problem to solve, I have selected "Classification"
