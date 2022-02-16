@@ -31,7 +31,17 @@ The best performing model found using AutoML was a VotingEnsemble    with 91.58%
 - Data split ratio was training:testing::70:30
 - Scikit-learn Logistic Regression ( from sklearn.linear_model import LogisticRegression) , RandomParameterSampling from (from azureml.train.hyperdrive.sampling import RandomParameterSampling) was used  "--C" : choice(0.01,0.1,1) ,   "--max_iter" : choice(10,20,40), here  C as inverse regularization C = 1/λ  which had a choice between 0.01, 0.1 and 1 , max_iter is for max number of iteration which has a choice between 10 ,20 or 40.
 
- 
+ - Accuracy
+
+![Accuracy](https://user-images.githubusercontent.com/32674614/154346781-d43b201e-7a1d-44dc-b88b-74f384304980.png)
+
+- Max Iteration
+
+![MaxItr](https://user-images.githubusercontent.com/32674614/154346839-fc0cf70b-7425-4908-b8eb-e4803e1b9f9b.png)
+
+- Regularization Strength
+![image](https://user-images.githubusercontent.com/32674614/154346904-642864ee-a233-4678-90e0-9c805937e1cd.png)
+
 
 **What are the benefits of the parameter sampler you chose?**
 
@@ -68,6 +78,25 @@ The cross validation checks overfitting and for computational reasons pre-define
 
 ### Following are AutoML Models and Accuracy.
 ![image](https://user-images.githubusercontent.com/32674614/154345574-eeabe14d-e656-4f0a-96dc-c6067d6b995a.png)
+
+### Explanation of the Best AutoML (VotingEnsemble)
+- Aggregate feature importance
+
+![Aggregate feature importance](https://user-images.githubusercontent.com/32674614/154346044-7a4efd2a-06a3-4669-acdd-d08814ce33a0.png)
+
+- Model Performance
+
+![Model Performance](https://user-images.githubusercontent.com/32674614/154346281-c180d968-bf9c-4db5-863c-6d6f0f929260.png)
+
+- Dataset Explained
+
+![Dataset](https://user-images.githubusercontent.com/32674614/154346401-bf1ab884-ff68-404d-9e11-f4092cbe7e5f.png)
+
+- ![image](https://user-images.githubusercontent.com/32674614/154346451-be0a5483-d693-40b2-bf68-f2ce1daeaa78.png)
+#### Metrics
+-![1](https://user-images.githubusercontent.com/32674614/154346505-5b48cf5f-5e5a-4353-9ea2-e4817eedecfc.png)
+- ![2](https://user-images.githubusercontent.com/32674614/154346584-ab21127e-0309-49e5-b857-34c57406f260.png)
+- ![3](https://user-images.githubusercontent.com/32674614/154346608-9dc450ca-be8b-4560-bb49-b16ad8ef00c6.png)
 
 
 
