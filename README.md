@@ -126,7 +126,7 @@ With AutoML the accuracy of best model VotingEnsemble was 91.58% accuracy and ac
 
 The architecture of both pipelines are different, however it follows the same process of  Load the data, instanciate the infrastructure to compute, set the parameters and call the compute method. AutoML allows an increased search for a better algorithm or a hyperparameter combination.
 
-
+```
 ## Future work
 **What are some areas of improvement for future experiments? Why might these improvements help the model?**
 #### AutoML generated the following alert:
@@ -135,8 +135,10 @@ The architecture of both pipelines are different, however it follows the same pr
 #### DESCRIPTION:  To decrease model bias, please cancel the current run and fix balancing problem.
               Learn more about imbalanced data: https://aka.ms/AutomatedMLImbalancedData
 #### DETAILS:      Imbalanced data can lead to a falsely perceived positive effect of a model's accuracy because the input data has bias towards one class.
-
+```
+- AutoML generated **Class Balancing issue** , this should be considered for future improvement.
 - In order to get over the above mentioned alert multiple other techniques may be used such as resampling training data, Adaptive Synthetic,Synthetic Minority Over-sampling Technique etc.
+- Class Balance issue may cause improper info/misleading info with respect to performance metrics like F1 , Recall etc.
 
 
 ## Proof of cluster clean up
