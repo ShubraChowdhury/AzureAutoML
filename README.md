@@ -1,5 +1,4 @@
 # Optimizing an ML Pipeline in Azure
-# Note: My program Failed to perform solution using hyperdrive (See the Jupyter NoteBook udacity-project.ipynb)
 ## Overview
 This project is part of the Udacity Azure ML Nanodegree.
 In this project, we build and optimize an Azure ML pipeline using the Python SDK and a provided Scikit-learn model.
