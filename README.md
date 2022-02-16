@@ -18,9 +18,8 @@ This dataset file name "bankmarketing_train.csv"  bank's campaigns . The marketi
 
 **In 1-2 sentences, explain the solution: e.g. "The best performing model was a ..."**
 
-The best performing model found using AutoML was a MaxAbsScaler LightGBM   with 91.44% accuracy, 
-## My program Failed to perform solution using hyperdrive (See the Jupyter NoteBook udacity-project.ipynb)
-
+The best performing model found using AutoML was a VotingEnsemble    with 91.58% accuracy, while LogisticRegression has accuray of 91.077% using hyperdrive 
+#
 
 
 ## Scikit-learn Pipeline
@@ -30,8 +29,8 @@ The best performing model found using AutoML was a MaxAbsScaler LightGBM   with 
 - Data was cleaned using the clean_data(data) in train.py
 - Data was split using sklearn.model_selection import train_test_split
 - Data split ratio was training:testing::70:30
-- Scikit-learn Logistic Regression ( from sklearn.linear_model import LogisticRegression) , RandomParameterSampling from (from azureml.train.hyperdrive.sampling import RandomParameterSampling) was used in addition to multiple hyperparameter (#"--learning_rate": normal(10,3), #"--keep_probability": uniform(0.05,0.1),#"--number_of_hidden_layers": choice(range(1,3)), "--P" : choice(0.01,0.1,1) ,   "--batch_size" : choice(32,64,128)) were used to test the solution. Batch Size with choice of [32,64,128] , Hidden layer with choice of [1,2,3], Learning Rate which returns a real value that's normally distributed with mean 10 and standard deviation 3, Keep Probablity that returns a value uniformly distributed between 0.05 and 0.1, P as inverse regularization C = 1/λ 
-## Unfortunately my program Failed to perform solution using hyperdrive (See the Jupyter NoteBook udacity-project.ipynb) , even after using multiple combination , i lost time while debugging the program and that impacted the AutoML section as you can see I ran out of time prior to printing AutoML output , saving the automl model and deleteing the cluster (last 3 cell of my juypter notebook)
+- Scikit-learn Logistic Regression ( from sklearn.linear_model import LogisticRegression) , RandomParameterSampling from (from azureml.train.hyperdrive.sampling import RandomParameterSampling) was used  "--C" : choice(0.01,0.1,1) ,   "--max_iter" : choice(10,20,40), here  C as inverse regularization C = 1/λ  which had a choice between 0.01, 0.1 and 1 , max_iter is for max number of iteration which has a choice between 10 ,20 or 40.
+
  
 
 **What are the benefits of the parameter sampler you chose?**
@@ -59,17 +58,17 @@ For example, consider a Bandit policy applied at interval 10. Assume that the be
 - Automated machine learning, also referred to as automated ML or AutoML, is the process of automating the time-consuming, iterative tasks of machine learning model development. It allows data scientists, analysts, and developers to build ML models with high scale, efficiency, and productivity all while sustaining model quality.
 
 - The model used in this run are LightGBM, XGBoostClassifier, ExtremeRandomTrees, LogisticRegression, SGD,RandomForest.
-- MaxAbsScaler LightGBM provided the best result with 91.44% accuracy.
+- VotingEnsemble provided the best result with 91.58% accuracy.
 
 Following configuration was used for AutoMl 
- AutoMLConfig(experiment_timeout_minutes=30, task='classification', primary_metric='accuracy',training_data=TRAIN_DATASET,label_column_name='y', n_cross_validations=4)
+ AutoMLConfig(experiment_timeout_minutes=16, task='classification', primary_metric='accuracy',training_data=TRAIN_DATASET,label_column_name='y', n_cross_validations=4, ebable_early_stopping=True,enable_onnx_compatible_models=True)
 
-The cross validation checks overfitting and for computational reasons pre-defined timeout was set to 30 Minutes which limits number of Models that could be built.Model has Accuracy as primary metric.
+The cross validation checks overfitting and for computational reasons pre-defined timeout was set to 15 Minutes (minimum allowed time is .25 hour and i used that) which limits number of Models that could be built.Model has Accuracy as primary metric.
 
 
 ## Pipeline comparison
 **Compare the two models and their performance. What are the differences in accuracy? In architecture? If there was a difference, why do you think there was one?**
-With AutoML the accuracy of best model MaxAbsScaler LightGBM was 91.44% accuracy and accuracy of HyperDrive model was inconclusive as my model errored out multiple times 
+With AutoML the accuracy of best model VotingEnsemble was 91.58% accuracy and accuracy of HyperDrive model was 91.077% 
 
 The architecture of both pipelines are different, however it follows the same process of  Load the data, instanciate the infrastructure to compute, set the parameters and call the compute method. AutoML allows an increased search for a better algorithm or a hyperparameter combination.
 
