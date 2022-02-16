@@ -39,6 +39,7 @@ As learned in the lessons I was expecting that random sampling over the hyperpar
 
 
 **What are the benefits of the early stopping policy you chose?**
+
 BanditPolicy is used is an early stopping policy. It cuts more runs than a conservative policy like the MedianStoppingPolicy, hence saving the computational time significantly.
 
 - BanditPolicy reference [BanditPolicy reference](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-tune-hyperparameters)
@@ -89,35 +90,6 @@ The architecture of both pipelines are different, however it follows the same pr
 **If you did not delete your compute cluster in the code, please complete this section. Otherwise, delete this section.**
 **Image of cluster marked for deletion**
 
-# I ran out of time prior to printing AutoML output , saving the automl model and deleteing the cluster (last 3 cell of my juypter notebook).
-
-# Images
-## Compute Instance Running
-![Compute Instance Running](https://user-images.githubusercontent.com/32674614/153981412-4ad70cd7-490e-46bc-a78d-efff9e06cb2f.png)
-## Compute Cluster
-![Compute Cluster](https://user-images.githubusercontent.com/32674614/153981544-8d93f9a5-a3a0-4ae3-bc3d-de8418907ed4.png)
-## Experiment
-![Experiment](https://user-images.githubusercontent.com/32674614/153981589-301b812e-276d-47bb-9b67-6be02b1317d7.png)
-## Hyperdrive Experiment Running
-![Hyperdrive Experiment Running](https://user-images.githubusercontent.com/32674614/153981647-f208d9c7-742c-4b5d-92a9-296c8c018e38.png)
-## Experiment With Hidden Layer & batch Size
-![Experiment With Hidden Layer & batch Size](https://user-images.githubusercontent.com/32674614/153981700-7a529bfa-4b59-42cf-9aa0-3f84fa088fff.png)
-## Environment
-![Environment](https://user-images.githubusercontent.com/32674614/153981797-850eaa7d-a6be-4105-ad75-0f288450040b.png)
-## DataStore
-![DataStore](https://user-images.githubusercontent.com/32674614/153981835-c5076090-7af0-4194-b0b1-4b59505faa58.png)
-## HyperDrive Error First Time
-![HyperDrive Error First Time](https://user-images.githubusercontent.com/32674614/153981884-2e69a8ba-e95b-47e7-aad6-42cba2497429.png)
-## Second Run with Hyperdrive
-![Second Run with Hyperdrive](https://user-images.githubusercontent.com/32674614/153981980-f38c3c66-840e-4a29-93b1-6bd9665104b6.png)
-## Run with IR and Batch Size
-![Run with IR and Batch Size ](https://user-images.githubusercontent.com/32674614/153982040-90c6f1b3-a531-4dad-af94-979533e335c3.png)
-## IR & BS Run Failed
-![IR & BS Run Failed](https://user-images.githubusercontent.com/32674614/153982200-a8354e4e-56eb-4078-a8e4-063853c2bfdd.png)
-## Third Run
-![Third Run](https://user-images.githubusercontent.com/32674614/153982272-53836c09-3ba0-43b5-a59c-fd63339874fd.png)
-## Third run later failed
-![Third run later failed](https://user-images.githubusercontent.com/32674614/153982305-02421e98-edd9-49e1-995c-1c4e64a3ce64.png)
 
 
 # References:
