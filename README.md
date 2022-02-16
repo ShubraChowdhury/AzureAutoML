@@ -122,6 +122,7 @@ automl_config = AutoMLConfig(
 
 ## Pipeline comparison
 **Compare the two models and their performance. What are the differences in accuracy? In architecture? If there was a difference, why do you think there was one?**
+
 With AutoML the accuracy of best model VotingEnsemble was 91.58% accuracy and accuracy of HyperDrive model was 91.077% 
 
 The architecture of both pipelines are different, however it follows the same process of  Load the data, instanciate the infrastructure to compute, set the parameters and call the compute method. AutoML allows an increased search for a better algorithm or a hyperparameter combination.
@@ -137,7 +138,7 @@ The architecture of both pipelines are different, however it follows the same pr
 #### DETAILS:      Imbalanced data can lead to a falsely perceived positive effect of a model's accuracy because the input data has bias towards one class.
 ```
 - AutoML generated **Class Balancing issue** , this should be considered for future improvement.
-- In order to get over the above mentioned alert multiple other techniques may be used such as resampling training data, Adaptive Synthetic,Synthetic Minority Over-sampling Technique ***SMOTE** etc.
+- In order to get over the above mentioned alert multiple other techniques may be used such as resampling training data, Adaptive Synthetic,Synthetic Minority Over-sampling Technique ***SMOTE*** etc.
 - Model is evaluated by its accuracy to predict. However, this is not appropriate when dealing with the imbalanced dataset ,  prtedicting F1 , Recall , precision etc may be misleading 
 - SMOTE is an Oversampling technique that allows us to generate synthetic samples for minority categories and this can help to overcome ***Class Imbalance***. 
 
