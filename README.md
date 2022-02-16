@@ -138,8 +138,7 @@ The architecture of both pipelines are different, however it follows the same pr
 ```
 - AutoML generated **Class Balancing issue** , this should be considered for future improvement.
 - In order to get over the above mentioned alert multiple other techniques may be used such as resampling training data, Adaptive Synthetic,Synthetic Minority Over-sampling Technique etc.
-- Class Balance issue may cause improper info/misleading info with respect to performance metrics like F1 , Recall etc.
-
+- Model is evaluated by its accuracy to predict. However, this is not appropriate when dealing with the imbalanced dataset ,  prtedicting F1 , Recall , precision etc may be misleading 
 
 ## Proof of cluster clean up
 **If you did not delete your compute cluster in the code, please complete this section. Otherwise, delete this section.**
